@@ -1,0 +1,19 @@
+@import "../../utils/style/style.css";
+
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner-container-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;    
+}
+
+.banner-container-list a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
