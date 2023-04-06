@@ -1,4 +1,4 @@
-import "../App.css";
+import "./Home.module.css";
 
 function Home() {
   return <h1>Hello world</h1>;
