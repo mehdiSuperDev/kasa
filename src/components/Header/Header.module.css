@@ -17,6 +17,8 @@
 .banner-container-list a {
     text-decoration: none;
     color: var(--color-primary);
+
+    /* font-size: 1.3rem; */
 }
 
 .underline {

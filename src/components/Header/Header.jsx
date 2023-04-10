@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import "../../utils/style/style.css";
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? styles["underline"] : ""
+                `${isActive ? styles["underline"] : ""} navLink-li`
               }
             >
               Accueil
@@ -24,7 +25,7 @@ function Header() {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? styles["underline"] : ""
+                `${isActive ? styles["underline"] : ""} navLink-li`
               }
             >
               A propos

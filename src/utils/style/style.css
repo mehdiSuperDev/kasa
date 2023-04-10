@@ -6,7 +6,17 @@
 }
 
 body {
+    /* layout */
     max-width: 1440px;
     margin: 0 auto;
     padding: 40px 100px;
+
+    /* font */
+    font-family: Montserat, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.title, .navLink-li {
+    font-size: 1.3em;
 }
