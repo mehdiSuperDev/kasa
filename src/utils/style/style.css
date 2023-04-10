@@ -1,4 +1,12 @@
+/* https://medium.com/@toshvelaga/using-global-css-variables-in-react-js-216f03fcdc56 */
+
 :root {
     --color-primary: #FF6060;
     --color-secondary: #F6F6F6;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 100px;
 }

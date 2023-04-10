@@ -1,22 +1,38 @@
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 function Header() {
   return (
-    <section className={styles["banner-container"]}>
-      <Link to="/">
-        <img src={logo} alt="logo Kasa" />
-      </Link>
-      <ul className={styles["banner-container-list"]}>
-        <li>
-          <Link to="/">Accueil</Link>
-        </li>
-        <li>
-          <Link to="/about">A propos</Link>
-        </li>
-      </ul>
-    </section>
+    <header className={styles["banner-container"]}>
+      <NavLink to="/">
+        <img className={styles["logo"]} src={logo} alt="logo Kasa" />
+      </NavLink>
+      <nav>
+        <ul className={styles["banner-container-list"]}>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? styles["underline"] : ""
+              }
+            >
+              Accueil
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? styles["underline"] : ""
+              }
+            >
+              A propos
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

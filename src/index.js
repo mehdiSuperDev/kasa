@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import Router from "./routes/Router";
+import "normalize.css";
+// import "./utils/style/style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

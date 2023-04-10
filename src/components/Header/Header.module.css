@@ -4,16 +4,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    /* debug */
+    background-color: blue;
 }
 
 .banner-container-list {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 20px;    
+    gap: 20px; 
+    
+    /* debug */
+    height: 100%;
+    background-color: yellow;
 }
 
 .banner-container-list a {
     text-decoration: none;
     color: var(--color-primary);
+}
+
+.underline {
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.logo {
+    height: 68px;
 }
