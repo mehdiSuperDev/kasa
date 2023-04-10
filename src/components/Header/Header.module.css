@@ -4,20 +4,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    /* debug */
-    background-color: blue;
+    align-items: center;
 }
 
 .banner-container-list {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 20px; 
-    
-    /* debug */
-    height: 100%;
-    background-color: yellow;
+    gap: 20px;
 }
 
 .banner-container-list a {
