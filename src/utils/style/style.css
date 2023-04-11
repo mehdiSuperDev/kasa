@@ -3,6 +3,9 @@
 :root {
     --color-primary: #FF6060;
     --color-secondary: #F6F6F6;
+
+    --font-size-primary: 18px;
+    --font-size-secondary: 1.3em;
 }
 
 body {
@@ -13,10 +16,10 @@ body {
 
     /* font */
     font-family: Montserat, sans-serif;
-    font-size: 18px;
+    font-size: var(--font-size-primary);
     line-height: 1.5;
 }
 
 .title, .navLink-li {
-    font-size: 1.3em;
+    font-size: var(--font-size-secondary);
 }

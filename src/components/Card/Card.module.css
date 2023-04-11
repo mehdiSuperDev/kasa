@@ -1,0 +1,19 @@
+article {
+    background-color: var(--color-primary);
+    background: linear-gradient(180deg, var(--color-primary) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+    position: relative;
+    color: white;
+}
+
+article h2 {
+    font-size: var(--font-size-primary);
+    font-weight: normal;
+}
+
+h2 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 0px;
+}
