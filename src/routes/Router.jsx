@@ -10,7 +10,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route exact path="/about" element={<About />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
