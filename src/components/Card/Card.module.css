@@ -4,6 +4,8 @@ article {
     border-radius: 10px;
     position: relative;
     color: white;
+
+    aspect-ratio: 1/1;
 }
 
 article h2 {

@@ -1,11 +1,11 @@
-import "./Home.module.css";
+import styles from "./Home.module.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useState, useEffect } from "react";
 import Card from "../../components/Card/Card";
 
 function Home() {
-  const [, setData] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -25,13 +25,16 @@ function Home() {
     <>
       <Header />
       <main>
-        <p>Main</p>
-        <Card
-          title="Titre de la location"
-          url="monsite.com"
-          width="340px"
-          height="340px"
-        />
+        <div className={styles["header"]}>
+          <div className={styles["overlay"]}>
+            <h1>Chez vous, partout et ailleurs</h1>
+          </div>
+        </div>
+        <section className={styles["card-container"]}>
+          {data.map((item) => {
+            return <Card key={item.id} title={item.title} url={item.cover} />;
+          })}
+        </section>
       </main>
       <Footer />
     </>

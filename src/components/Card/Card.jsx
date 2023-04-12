@@ -1,11 +1,11 @@
 import "./Card.module.css";
 import PropTypes from "prop-types";
 
-function Card({ title, url, width, height }) {
+function Card({ title, url, size }) {
   console.log(`card url: ${url}`);
 
   return (
-    <article style={{ width: width, height: height }}>
+    <article width={size}>
       <h2>{title}</h2>
     </article>
   );
@@ -14,13 +14,11 @@ function Card({ title, url, width, height }) {
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string,
-  width: PropTypes.string,
-  height: PropTypes.string,
+  size: PropTypes.string,
 };
 
 Card.defaultProps = {
-  width: "340px",
-  height: "340px",
+  size: "340px",
 };
 
 export default Card;

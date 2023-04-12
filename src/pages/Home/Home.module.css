@@ -1,0 +1,29 @@
+.header {
+    border-radius: 25px;
+    height: 225px;
+    background-image: url("../../assets/paysage-1.png");
+    background-size: cover;
+    background-position: center;
+
+    /* grayscale filter */
+    /* filter: brightness(50%);
+    opacity: 0.7; */
+
+    color: white;
+
+    /* center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    margin: 40px 0;
+    background-color: var(--color-secondary);
+    border-radius: 25px;
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 60px;
+}
