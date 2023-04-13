@@ -1,6 +1,5 @@
 import styles from "./Card.module.css";
 import PropTypes from "prop-types";
-// import { useEffect, useState } from "react";
 
 function Card({ title, url, size }) {
   return (
