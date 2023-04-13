@@ -1,11 +1,14 @@
 /* https://medium.com/@toshvelaga/using-global-css-variables-in-react-js-216f03fcdc56 */
 
+@import "normalize.css";
+
 :root {
     --color-primary: #FF6060;
     --color-secondary: #F6F6F6;
 
     --font-size-primary: 18px;
-    --font-size-secondary: 1.3em;
+    --font-size-secondary: 1.5rem;
+    --font-size-header: 2rem;
 }
 
 body {
@@ -17,9 +20,17 @@ body {
     /* font */
     font-family: Montserat, sans-serif;
     font-size: var(--font-size-primary);
+    font-weight: 500;
     line-height: 1.5;
+}
+
+h1, h2 {
+    font-style: normal;
+    font-size: var(--font-size-header);
+    font-weight: inherit;
 }
 
 .title, .navLink-li {
     font-size: var(--font-size-secondary);
+    font-weight: inherit;
 }
