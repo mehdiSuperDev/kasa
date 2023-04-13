@@ -21,6 +21,10 @@
     /* font-size: 1.3rem; */
 }
 
+.banner-container-list li {
+    font-size: 1.3rem;
+}
+
 .underline {
     border-bottom: 1px solid var(--color-primary);
 }
@@ -28,3 +32,22 @@
 .logo {
     height: 68px;
 }
+
+/* wip */
+/* @media screen and (max-width: 460px) {
+    .logo {
+        height: 45px;
+    }
+
+    .banner-container {
+        justify-content: center;
+    }
+
+    .banner-container-list {
+        gap: 4px;
+    }
+
+    .banner-container-list a {    
+        font-size: 12px;
+    }
+} */

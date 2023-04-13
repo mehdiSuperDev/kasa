@@ -30,7 +30,7 @@ h1, h2 {
     font-weight: inherit;
 }
 
-.title, .navLink-li {
+.title {
     font-size: var(--font-size-secondary);
     font-weight: inherit;
 }
