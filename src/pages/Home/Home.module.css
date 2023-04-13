@@ -27,3 +27,11 @@
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-gap: 60px;
 }
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        padding: 0px;
+        grid-gap: 20px;
+        background-color: white;
+    }
+}
