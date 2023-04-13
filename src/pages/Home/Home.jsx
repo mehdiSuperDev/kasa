@@ -26,9 +26,7 @@ function Home() {
       <Header />
       <main>
         <div className={styles["header"]}>
-          <div className={styles["overlay"]}>
-            <h1>Chez vous, partout et ailleurs</h1>
-          </div>
+          <h1>Chez vous, partout et ailleurs</h1>
         </div>
         <section className={styles["card-container"]}>
           {data.map((item) => {

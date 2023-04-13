@@ -1,5 +1,3 @@
-@import "../../utils/style/style.css";
-
 .banner-container {
     display: flex;
     flex-direction: row;
@@ -34,13 +32,9 @@
 }
 
 /* wip */
-/* @media screen and (max-width: 460px) {
+@media screen and (max-width: 460px) {
     .logo {
         height: 45px;
-    }
-
-    .banner-container {
-        justify-content: center;
     }
 
     .banner-container-list {
@@ -50,4 +44,4 @@
     .banner-container-list a {    
         font-size: 12px;
     }
-} */
+}

@@ -30,7 +30,19 @@ h1, h2 {
     font-weight: inherit;
 }
 
+/* reset */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .title {
     font-size: var(--font-size-secondary);
     font-weight: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0px 20px;
+    }
 }
