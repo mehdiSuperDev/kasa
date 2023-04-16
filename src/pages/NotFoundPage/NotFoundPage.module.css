@@ -1,0 +1,32 @@
+.nfp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nfp-container > div {
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nfp-container h1 {
+    font-weight: 700;
+    font-size: 288px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.nfp-container > div > p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.nfp-container a {
+    color: var(--color-primary);
+}
