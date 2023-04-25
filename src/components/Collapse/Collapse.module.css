@@ -3,6 +3,7 @@
     flex-direction: column;
 
     row-gap: 0px;
+    width: 100%;
 }
 
 .collapse-header {
