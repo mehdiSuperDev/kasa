@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Pages
 import Home from "../pages/Home/Home.jsx";
-import About from "../pages/About.jsx";
+import About from "../pages/About/About.jsx";
 import CardDetails from "../pages/CardDetails/CardDetails.jsx";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 

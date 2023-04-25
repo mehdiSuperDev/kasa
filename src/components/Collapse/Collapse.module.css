@@ -16,8 +16,7 @@
     align-items: center;
     height: 40px;
 
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 5px;
 }
 
 .collapse-header h2 {
