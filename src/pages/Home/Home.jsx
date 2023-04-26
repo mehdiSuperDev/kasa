@@ -11,7 +11,7 @@ function Home() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("data.json");
+        const response = await fetch("/data.json");
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
