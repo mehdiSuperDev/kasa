@@ -7,7 +7,7 @@
     background-position: center;
 }
 
-.body-footer {
+.spacer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

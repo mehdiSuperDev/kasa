@@ -1,0 +1,8 @@
+.box {
+    padding: 2px 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--color-primary);
+    margin: 0px;
+    font-size: 14px;
+}
