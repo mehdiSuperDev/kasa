@@ -1,3 +1,11 @@
+.header {
+    border-radius: 25px;
+    height: 225px;
+    background-image: url("../../assets/paysage-2.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -8,7 +16,7 @@
 
 @media screen and (min-width: 768px) {
     .about-container {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }

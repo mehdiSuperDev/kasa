@@ -6,12 +6,13 @@ import local from "../../locale/aboutLocal";
 
 function About() {
   const fields = Object.values(local).map((field) => (
-    <Collapse key={field.title} title={field.title} body={field.text} />
+    <Collapse key={field.title} title={field.title} texts={[field.text]} />
   ));
 
   return (
     <>
       <Header />
+      <div className={styles["header"]}></div>
       <div className={styles["about-container"]}>{fields}</div>
       <Footer />
     </>

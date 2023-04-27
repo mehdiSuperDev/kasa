@@ -56,15 +56,15 @@ function CardDetails() {
               />
             </div>
           </div>
-          <div className={styles["spacer"]}>
-            <span>
+          <div className={`${styles["spacer"]} ${styles["separator"]}`}>
+            <div>
               {data.tags.map((tag, index) => (
                 <Tag key={index} text={tag} />
               ))}
-            </span>
+            </div>
             <Stars note={parseInt(data.rating)} />
           </div>
-          <div className={styles["spacer"]}>
+          <div className={`${styles["spacer"]} ${styles["colgap"]}`}>
             <Collapse title="Description" texts={[data.description]} />
             <Collapse title="Équipements" texts={data.equipments} />
           </div>
