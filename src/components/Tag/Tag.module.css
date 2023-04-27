@@ -1,6 +1,6 @@
 .box {
     padding: 2px 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     background-color: var(--color-primary);
     margin: 0px;

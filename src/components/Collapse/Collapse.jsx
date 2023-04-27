@@ -1,10 +1,11 @@
 import styles from "./Collapse.module.css";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import React from "react";
 
-function Collapse({ title, body }) {
+function Collapse({ title, texts }) {
   const [isShow, setIsShow] = useState(true);
 
   const toggleCollapse = () => {
@@ -12,9 +13,9 @@ function Collapse({ title, body }) {
   };
 
   const icon = isShow ? (
-    <FontAwesomeIcon icon="fa-solid fa-angle-up" />
+    <FontAwesomeIcon icon={faChevronUp} />
   ) : (
-    <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
+    <FontAwesomeIcon icon={faChevronDown} />
   );
 
   return (
@@ -23,14 +24,23 @@ function Collapse({ title, body }) {
         <h2>{title}</h2>
         <button onClick={toggleCollapse}>{icon}</button>
       </div>
-      {isShow && <p>{body}</p>}
+      {isShow && (
+        <div className={styles["collapse-body"]}>
+          {texts.map((text, index) => (
+            <React.Fragment key={index}>
+              {text}
+              {index !== texts.length - 1 && <br />}
+            </React.Fragment>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  body: PropTypes.string.isRequired,
+  texts: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Collapse;
