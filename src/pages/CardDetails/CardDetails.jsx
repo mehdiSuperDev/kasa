@@ -6,7 +6,7 @@ import Collapse from "../../components/Collapse/Collapse";
 import Stars from "../../components/Stars/Stars";
 import Tag from "../../components/Tag/Tag";
 import { useState, useEffect } from "react";
-// import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function CardDetails() {
   const { id } = useParams();
@@ -17,6 +17,8 @@ function CardDetails() {
   const firstName = nameParts[0];
   const lastName = nameParts[nameParts.length - 1];
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -25,6 +27,8 @@ function CardDetails() {
         const item = jsonData.find((item) => item.id === id);
         if (item) {
           setData(item);
+        } else {
+          navigate("/not-found-page");
         }
       } catch (error) {
         console.log(`Error: ${error}`);
