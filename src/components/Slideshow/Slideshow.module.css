@@ -3,6 +3,8 @@
     display: flex;
     border-radius: 25px;
     height: 415px;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide-show img {
@@ -10,16 +12,33 @@
     object-position: center;
     height: 100%;
     width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .right-arrow {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     right: 10px;
 }
 
 .left-arrow {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     left: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+  
+button:focus {
+    outline: none;
+}
+
+.slide-show button {
+font-size: 5em;
 }

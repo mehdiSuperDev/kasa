@@ -33,17 +33,13 @@ function Slideshow({ images }) {
 
   return (
     <div className={styles["slide-show"]}>
-      <Arrow
-        className={styles["left-arrow"]}
-        direction="left"
-        onClick={handleLeftClick}
-      />
+      <button className={styles["left-arrow"]} onClick={handleLeftClick}>
+        {"<"}
+      </button>
       <img src={images[currentIndex]} />
-      <Arrow
-        className={styles["right-arrow"]}
-        direction="right"
-        onClick={handleRightClick}
-      />
+      <button className={styles["right-arrow"]} onClick={handleRightClick}>
+        {">"}
+      </button>
     </div>
   );
 }
