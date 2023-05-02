@@ -18,13 +18,11 @@
 
 .right-arrow {
     position: absolute;
-    /* top: 50%; */
     right: 10px;
 }
 
 .left-arrow {
     position: absolute;
-    /* top: 50%; */
     left: 10px;
 }
 
@@ -40,5 +38,5 @@ button:focus {
 }
 
 .slide-show button {
-font-size: 5em;
+    font-size: 5em;
 }

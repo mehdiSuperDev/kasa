@@ -1,19 +1,19 @@
 import styles from "./Slideshow.module.css";
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const Arrow = ({ direction, onClick }) => {
-  const arrowDirection =
-    direction === "left" ? "fa-chevron-left" : "fa-chevron-right";
-  return (
-    <button onClick={onClick}>
-      <i className={`fas ${arrowDirection}`} />
-    </button>
-  );
-};
-
-function Slideshow({ images }) {
+function Slideshow({ images, keyAction, setKeyAction }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (keyAction === "left") {
+      handleLeftClick();
+      setKeyAction(null);
+    } else if (keyAction === "right") {
+      handleRightClick();
+      setKeyAction(null);
+    }
+  }, [keyAction]);
 
   const handleLeftClick = () => {
     if (currentIndex === 0) {
@@ -44,13 +44,10 @@ function Slideshow({ images }) {
   );
 }
 
-Arrow.propTypes = {
-  direction: PropTypes.oneOf(["left", "right"]).isRequired,
-  onClick: PropTypes.func.isRequired,
-};
-
 Slideshow.propTypes = {
   images: PropTypes.arrayOf(PropTypes.string),
+  keyAction: PropTypes.oneOf([null, "left", "right"]),
+  setKeyAction: PropTypes.func.isRequired,
 };
 
 export default Slideshow;

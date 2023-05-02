@@ -20,6 +20,8 @@ function CardDetails() {
 
   const navigate = useNavigate();
 
+  const [keyAction, setKeyAction] = useState(null);
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -35,7 +37,20 @@ function CardDetails() {
         console.log(`Error: ${error}`);
       }
     }
+    function handleKeyDown(event) {
+      if (event.keyCode === 37) {
+        setKeyAction("left");
+      } else if (event.keyCode === 39) {
+        setKeyAction("right");
+      }
+    }
+
     fetchData();
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [id]);
 
   return (
@@ -43,8 +58,11 @@ function CardDetails() {
       <Header />
       {data && (
         <>
-          {/* <div className={styles["header"]}></div> */}
-          <Slideshow images={data.pictures} />
+          <Slideshow
+            images={data.pictures}
+            keyAction={keyAction}
+            setKeyAction={setKeyAction}
+          />
           <div className={styles["spacer"]}>
             <div>
               <h1>{data.title}</h1>
