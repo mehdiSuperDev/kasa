@@ -1,0 +1,25 @@
+.slide-show {
+    position: relative;
+    display: flex;
+    border-radius: 25px;
+    height: 415px;
+}
+
+.slide-show img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}

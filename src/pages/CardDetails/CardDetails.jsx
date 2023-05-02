@@ -7,6 +7,7 @@ import Stars from "../../components/Stars/Stars";
 import Tag from "../../components/Tag/Tag";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Slideshow from "../../components/Slideshow/Slideshow";
 
 function CardDetails() {
   const { id } = useParams();
@@ -42,7 +43,8 @@ function CardDetails() {
       <Header />
       {data && (
         <>
-          <div className={styles["header"]}></div>
+          {/* <div className={styles["header"]}></div> */}
+          <Slideshow images={data.pictures} />
           <div className={styles["spacer"]}>
             <div>
               <h1>{data.title}</h1>
