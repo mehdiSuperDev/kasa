@@ -40,3 +40,13 @@ button:focus {
 .slide-show button {
     font-size: 5em;
 }
+
+@media screen and (max-width: 768px) {
+    .slide-show {
+        height: 225px;
+    }
+
+    .slide-show button {
+        font-size: 2em;
+    }
+}

@@ -45,4 +45,16 @@
         background-color: white;
         grid-template-columns: 1fr;
     }
+
+    .header {
+        justify-content: center;
+        position: relative;
+        height: 110px;
+    }
+
+    .header h1 {
+        position: absolute;
+        font-size: 24px;
+        left: 20px;
+    }
 }
