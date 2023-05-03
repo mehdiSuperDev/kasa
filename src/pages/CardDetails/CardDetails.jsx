@@ -52,7 +52,7 @@ function CardDetails() {
         </div>
       </div>
       <div className={`${styles["spacer"]} ${styles["separator"]}`}>
-        <div>
+        <div className={styles["tag-container"]}>
           {data.tags.map((tag, index) => (
             <Tag key={index} text={tag} />
           ))}
@@ -77,7 +77,7 @@ function CardDetails() {
       <div className={styles["divider"]}>
         <h1>{data.title}</h1>
         <address>{data.location}</address>
-        <div>
+        <div className={styles["tag-container"]}>
           {data.tags.map((tag, index) => (
             <Tag key={index} text={tag} />
           ))}
