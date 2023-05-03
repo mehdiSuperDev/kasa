@@ -56,6 +56,21 @@
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    .header {
+        height: 335px;
+    }
+
+    .spacer {
+        align-items: center;
+    }
+
+    .divider {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
     .body-footer {
         display: block;
     }
