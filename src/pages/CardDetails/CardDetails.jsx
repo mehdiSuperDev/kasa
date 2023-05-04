@@ -96,7 +96,6 @@ function CardDetails() {
             />
           </div>
         </div>
-        {/* <div className={`${styles["spacer"]} ${styles["separator"]}`}> */}
         <div className={styles["divider"]}>
           <Collapse title="Description" texts={[data.description]} />
           <Collapse title="Équipements" texts={data.equipments} />
@@ -118,6 +117,7 @@ function CardDetails() {
         }
       } catch (error) {
         console.log(`Error: ${error}`);
+        navigate("/error-page");
       }
     }
     function handleKeyDown(event) {

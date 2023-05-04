@@ -21,7 +21,7 @@
 }
 
 .collapse-header h2 {
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 .collapse-body {
@@ -32,4 +32,14 @@
 
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .collapse-header h2 {
+        font-size: 16px;
+    }
+
+    .collapse-body {
+        font-size: 14px;
+    }
 }
