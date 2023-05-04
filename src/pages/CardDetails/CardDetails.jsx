@@ -24,7 +24,7 @@ function CardDetails() {
 
   //Responsive
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const desktopContent = data && (
     <>
