@@ -31,7 +31,6 @@
     height: 68px;
 }
 
-/* wip */
 @media screen and (max-width: 460px) {
     .logo {
         height: 45px;
