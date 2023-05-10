@@ -1,13 +1,9 @@
 .header {
     border-radius: 25px;
     height: 225px;
-    background-image: url("../../assets/paysage-1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/paysage-1.png");
     background-size: cover;
     background-position: center;
-
-    /* grayscale filter */
-    /* filter: brightness(50%);
-    opacity: 0.7; */
 
     color: white;
 
