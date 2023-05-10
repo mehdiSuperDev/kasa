@@ -13,6 +13,7 @@
     align-items: center;
 
     width: 100%;
+    white-space: pre-line;
 }
 
 .card-container {
@@ -50,7 +51,9 @@
 
     .header h1 {
         position: absolute;
+        font-weight: 500;
         font-size: 24px;
         left: 20px;
+        right: 20px;
     }
 }

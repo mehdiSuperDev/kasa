@@ -33,3 +33,11 @@
     right: 0px;
     z-index: 0;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .card-container {
+        aspect-ratio: unset;
+        height: 255px;
+    }
+}
